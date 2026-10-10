@@ -138,3 +138,23 @@ h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
 .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .slide.active .fade-up { opacity: 1; transform: translateY(0); }
 .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.3s; } .delay-3 { transition-delay: 0.5s; } .delay-4 { transition-delay: 0.7s; }
+
+
+/* Simple Matrix Redesign */
+.simple-matrix { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; width: 100%; max-width: 1100px; }
+.sm-row { display: grid; grid-template-columns: 140px 1fr 1fr 1fr; gap: 1rem; align-items: stretch; }
+.sm-labels-x { align-items: center; margin-top: 0.5rem; }
+.sm-label-y { font-family: 'Outfit'; font-size: 1.2rem; font-weight: 700; color: var(--text-muted); display: flex; align-items: center; justify-content: flex-end; padding-right: 1rem; text-align: right; letter-spacing: 2px;}
+.sm-label-x { font-family: 'Outfit'; font-size: 1.2rem; font-weight: 700; color: var(--text-muted); text-align: center; letter-spacing: 2px;}
+.sm-cell { border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; min-height: 120px; border: 2px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02); justify-content: center; transition: transform 0.2s ease;}
+.sm-cell:hover { transform: scale(1.02); }
+.danger-zone { background: rgba(239, 68, 68, 0.05); border-color: rgba(239, 68, 68, 0.3); }
+.warn-zone { background: rgba(249, 115, 22, 0.05); border-color: rgba(249, 115, 22, 0.3); }
+.safe-zone { background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.3); }
+.normal-zone { background: rgba(59, 130, 246, 0.05); border-color: rgba(59, 130, 246, 0.3); }
+.empty-zone { background: transparent; border-color: transparent; }
+.sm-tag { font-size: 1.1rem; font-weight: 600; padding: 12px 20px; border-radius: 8px; background: rgba(255,255,255,0.05); color: var(--text-main); display: flex; align-items: center; gap: 12px; }
+.danger-zone .sm-tag { background: rgba(239, 68, 68, 0.2); }
+.warn-zone .sm-tag { background: rgba(249, 115, 22, 0.2); }
+.safe-zone .sm-tag { background: rgba(16, 185, 129, 0.2); }
+.normal-zone .sm-tag { background: rgba(59, 130, 246, 0.2); }

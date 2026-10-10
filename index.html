@@ -119,45 +119,48 @@
             </div>
         </section>
 
-        <!-- Slide 5: Matrix -->
+                <!-- Slide 5: Matrix -->
         <section class="slide" id="slide-5">
             <div class="slide-content no-card">
                 <h2 class="section-title fade-up delay-1">PORTFOLIO MATRIX</h2>
                 <p class="desc fade-up delay-1 mb-2">Pemetaan urgensi & kesehatan 7 proses bisnis utama.</p>
                 
-                <div class="raw-matrix fade-up delay-2">
-                    <div class="r-axis-y">IMPORTANCE</div>
-                    <div class="r-grid">
-                        <div class="r-cell r-label">TINGGI</div>
-                        <div class="r-cell r-danger">
-                            <span class="glow-dot red"></span> P7: Monitoring Outlet
+                <div class="simple-matrix fade-up delay-2">
+                    <!-- Row 1: Importance Tinggi -->
+                    <div class="sm-row">
+                        <div class="sm-label-y">IMP: TINGGI</div>
+                        <div class="sm-cell danger-zone">
+                            <span class="sm-tag"><span class="glow-dot red"></span>P7: Monitoring Outlet</span>
                         </div>
-                        <div class="r-cell">
-                            <span class="glow-dot orange"></span> P1: Pendaftaran<br>
-                            <span class="glow-dot orange mt-1"></span> P2: Pemesanan Air
+                        <div class="sm-cell warn-zone">
+                            <span class="sm-tag"><span class="glow-dot orange"></span>P1: Pendaftaran</span>
+                            <span class="sm-tag"><span class="glow-dot orange"></span>P2: Pemesanan Air</span>
                         </div>
-                        <div class="r-cell">
-                            <span class="glow-dot green"></span> P4: Uji Air<br>
-                            <span class="glow-dot green mt-1"></span> P6: Pengisian
+                        <div class="sm-cell safe-zone">
+                            <span class="sm-tag"><span class="glow-dot green"></span>P4: Uji Air</span>
+                            <span class="sm-tag"><span class="glow-dot green"></span>P6: Pengisian</span>
                         </div>
-                        
-                        <div class="r-cell r-label">SEDANG</div>
-                        <div class="r-cell"></div>
-                        <div class="r-cell">
-                            <span class="glow-dot blue"></span> P3: Komplain<br>
-                            <span class="glow-dot blue mt-1"></span> P5: Rekrutmen
+                    </div>
+                    <!-- Row 2: Importance Sedang -->
+                    <div class="sm-row">
+                        <div class="sm-label-y">IMP: SEDANG</div>
+                        <div class="sm-cell empty-zone"></div>
+                        <div class="sm-cell normal-zone">
+                            <span class="sm-tag"><span class="glow-dot blue"></span>P3: Komplain</span>
+                            <span class="sm-tag"><span class="glow-dot blue"></span>P5: Rekrutmen</span>
                         </div>
-                        <div class="r-cell"></div>
-                        
-                        <div class="r-cell empty"></div>
-                        <div class="r-cell r-label border-top">RENDAH</div>
-                        <div class="r-cell r-label border-top">SEDANG</div>
-                        <div class="r-cell r-label border-top">TINGGI</div>
+                        <div class="sm-cell empty-zone"></div>
+                    </div>
+                    <!-- X Axis Labels -->
+                    <div class="sm-row sm-labels-x">
+                        <div class="sm-label-y empty"></div>
+                        <div class="sm-label-x">HEALTH: RENDAH</div>
+                        <div class="sm-label-x">HEALTH: SEDANG</div>
+                        <div class="sm-label-x">HEALTH: TINGGI</div>
                     </div>
                 </div>
-                <div class="r-axis-x fade-up delay-2">HEALTH</div>
                 
-                <p class="matrix-note fade-up delay-3 mt-3">
+                <p class="matrix-note fade-up delay-3 mt-4">
                     <span class="neon-text">FOKUS REDESAIN:</span> P7 & P2 (Krusial, namun rentan masalah antrean/human-error).
                 </p>
             </div>
